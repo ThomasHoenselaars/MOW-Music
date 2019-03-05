@@ -7,6 +7,7 @@
 html {
   height: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body { 
@@ -24,6 +25,8 @@ body {
  
   
 }
+
+
 
 ul {
     list-style: none;
@@ -140,6 +143,10 @@ p {
   z-index: 2;
 }
 
+.main-text {
+  flex: 1;
+}
+
 .spotify-player {
   position: relative;
   padding-bottom: 56.25%; 
@@ -156,16 +163,6 @@ p {
   height: 100%;
 }
 
-/* .slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-} */
-
 .slide, .slide:before {
   background: 50% 50% / cover;  
   
@@ -181,6 +178,39 @@ p {
 .footer p {
   color: white;
 }
+
+/* .booking-popup {
+  display: none;
+  
+  text-align: center;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100vw;
+
+}
+
+.booking-popup.visible {
+  display: block;
+}
+
+.booking-main {
+  text-align: left;
+  background-color: white;
+  height: 100vh;
+}
+
+
+iframe {
+  
+  width: 100%;
+  height: 100vh;
+} */
+
 
 #title {
   background-image: url("images/Studio\ MOW-0386.jpg");
@@ -224,10 +254,10 @@ p {
   } 
 }
 
-.hidden {
+/* .hidden {
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 @keyframes fade-in {
   from {opacity: 0; transform: scale(.7,.7)}
