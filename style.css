@@ -71,6 +71,12 @@ p {
     color: lightgrey;
 }
 
+.menu-selected {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
 .title {
     min-width: 50%;
     padding: 5%;
