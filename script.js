@@ -31,17 +31,17 @@
 
 // animateHTML().init();
 
-// const slideOne = document.querySelector('#slide1');
-// const navLinks = document.querySelectorAll('.navlist');
-// console.log(navLinks);
+const slideOne = document.querySelector('#slide1');
+const navLinks = document.querySelectorAll('.navlist');
+console.log(navLinks);
 
-// const slideToView = () => {
-//     slideOne.scrollIntoView({ behavior: 'smooth' });
-// };
+const slideToView = () => {
+    slideOne.scrollIntoView({ behavior: 'smooth' });
+};
 
-// navLinks.forEach(navLink => {
-//     console.log(navLink);
-// });
+navLinks.forEach(navLink => {
+    console.log(navLink);
+});
 
 // const closeMenu = document.querySelector('.closeframe');
 // const openMenu = document.querySelector('.openframe');
