@@ -19,7 +19,9 @@
 //         }
 //     }
 
-//     window.addEventListener('click', checkPosition);
+//     window.addEventListener('click', (e) => {
+//         console.log(e);
+//     });
 
 //     return {
 //         init: init
@@ -28,20 +30,29 @@
     
 // };
 
+// window.addEventListener('scroll', (e) => {
+//     console.log(e);
+// });
 
 // animateHTML().init();
 
 const slideOne = document.querySelector('#slide1');
 const navLinks = document.querySelectorAll('.navlist');
-console.log(navLinks);
 
-const slideToView = () => {
-    slideOne.scrollIntoView({ behavior: 'smooth' });
+const slideToView = (slideElement) => {
+    slideElement.scrollIntoView({ behavior: 'smooth' });
 };
 
 navLinks.forEach(navLink => {
-    console.log(navLink);
+    navLink.addEventListener('click', (e) => {
+        const slide = e.target.dataset.slide;
+        const slideElement = document.getElementById(slide);
+        slideToView(slideElement);
+        e.preventDefault();
+    });
 });
+
+
 
 // const closeMenu = document.querySelector('.closeframe');
 // const openMenu = document.querySelector('.openframe');
